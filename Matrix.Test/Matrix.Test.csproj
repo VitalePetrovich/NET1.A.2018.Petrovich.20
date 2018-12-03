@@ -54,6 +54,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Matrix.Base\Matrix.Base.csproj">
+      <Project>{6355EFB1-3BCB-4B2D-AF84-F2B56060EF76}</Project>
+      <Name>Matrix.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrix.Extension\Matrix.Extension.csproj">
+      <Project>{034b45c2-d1a1-4d27-b593-f2e329bfff26}</Project>
+      <Name>Matrix.Extension</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Matrix\Matrix.csproj">
       <Project>{cfecd97c-b226-46be-9fe1-58e6c417320d}</Project>
       <Name>Matrix</Name>
