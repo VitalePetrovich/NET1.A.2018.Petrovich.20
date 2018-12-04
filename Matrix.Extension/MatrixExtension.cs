@@ -57,7 +57,7 @@
 
             bool isDiag = !matrix
                               .Select((value, index) => new { value, row = index / matrix.Rank, col = index % matrix.Rank })
-                              .Any(anon => anon.row == anon.col && !comparer.Equals(anon.value, default(T)));
+                              .Any(anon => anon.row != anon.col && !comparer.Equals(anon.value, default(T)));
 
             if (isDiag)
             {
